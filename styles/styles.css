@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    transition: linear 500ms;
+}
+
+body {
+    background-color: black;
+}
+
+.hero {
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(8, 4, 4, 0) 50%, rgb(8, 4, 4) 90.22%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/bayc-1a640.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 01;
+    /* text-align: center; */
+    padding-top: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    padding-top: 10rem;
+}
+
+.navbar {
+    background: rgba(8, 4, 4, 0.6);
+    backdrop-filter: blur(10px);
+    height: 62px;
+    width: 100%;
+    margin-top: -32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 31px;
+}
+
+.first-box {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 19rem;
+}
+
+.nav-logo {
+    width: 5rem;
+    height: 1.7rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 7px;
+}
+
+.nav-links h1 {
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.nav-links h1:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.search-box {
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 5px;
+    width: 300px;
+    height: 36px;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgb(146, 146, 146);
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    padding-left: .7rem;
+}
+
+.search-box i {
+    font-size: 1rem;
+}
+
+.search-box h1 {
+    font-size: 1rem;
+    color: rgb(146, 146, 146) !important;
+    margin-left: 8px !important;
+    margin-top: 6px !important;
+}
+
+.third-box a {
+    height: 30rem;
+}
+
+.connect-btn {
+    background-color: #ff8700;
+    color: #080404;
+    font-family: 'Roboto Mono', monospace !important;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    height: 2.5rem !important;
+    width: 9rem;
+    border-radius: 5px;
+}
+
+.connect-btn-2 {
+    background-color: #ff8700;
+    color: #080404;
+    font-family: 'Roboto Mono', monospace !important;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    height: 2.5rem !important;
+    width: 5rem;
+    border-radius: 5px;
+}
+
+.menu {
+    color: #ff8700;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.hero-inner {
+    width: 100% !important;
+}
+
+.hero-content h1 {
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+}
+
+.hero-content h2 {
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+}
+
+.hero-content-2 {
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-one h1,
+.box-two h1 {
+    color: #C1C1C1;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+}
+
+.box-one h2,
+.box-two h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.view-collection-btn {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .5rem;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.view-collection-btn:hover {
+    background-color: #FFF;
+    color: black;
+    transition: linear 500ms;
+}
+
+.collection {
+    background-color: black;
+    width: 100%;
+    margin-top: -5rem !important;
+    z-index: 99999;
+    /* padding-bottom: 10rem; */
+}
+
+.collection-cards {
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 9999999;
+    display: flex;
+}
+
+.collection-one {
+    background: linear-gradient(rgba(8, 4, 4, 0) 50%, rgb(8, 4, 4) 90.22%), url(../assets/bayc-1a640.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    z-index: 99999999;
+    border-radius: 7px;
+    margin-right: 1.2rem;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.collection-two {
+    background: linear-gradient(rgba(8, 4, 4, 0) 50%, rgb(8, 4, 4) 90.22%), url(../assets/azuki.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    z-index: 99999999;
+    border-radius: 7px;
+    margin-right: 1.2rem;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.collection-three {
+    background: linear-gradient(rgba(8, 4, 4, 0) 50%, rgb(8, 4, 4) 90.22%), url(../assets/puddy.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    z-index: 99999999;
+    border-radius: 7px;
+    margin-right: 1.2rem;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.collection-four {
+    background: linear-gradient(rgba(8, 4, 4, 0) 50%, rgb(8, 4, 4) 90.22%), url(../assets/moonbirds.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    z-index: 99999999;
+    border-radius: 7px;
+    margin-right: 1.2rem;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.collection-one h1,
+.collection-two h1,
+.collection-three h1,
+.collection-four h1 {
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.airdrop-bar {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 400;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.airdrop-bar h1 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.airdrop-bar a {
+    text-decoration: none;
+    border: 1px solid #ff8700;
+    color: #ff8700;
+    border-radius: 3px;
+    padding: .5rem 1rem .5rem 1rem;
+    margin-top: 3rem !important;
+}
+
+.airdrop-bar h1 a:hover {
+    background-color: #FFF;
+}
+
+.hr {
+    width: 100%;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.creator-link {
+    font-family: 'Roboto Mono', monospace !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 16px;
+    color: #ade25d;
+    text-shadow: rgb(173 226 93 / 80%) 0px 0px 16px, rgb(173 226 93 / 40%) 0px 0px 20px;
+}
+
+.creator-link:hover {
+    color: #FFF;
+}
+
+.marketplace {
+    background-color: black;
+    padding-top: 5rem;
+}
+
+.marketplace-content h1 {
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 48px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+}
+
+.marketplace-content h2 {
+    color: #C1C1C1;
+    font-size: 22px;
+    font-family: 'Roboto Mono', monospace !important;
+    margin-top: 3rem;
+}
+
+.feedback {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . .";
+}
+
+.feedback-one h1,
+.feedback-two h1,
+.feedback-three h1,
+.feedback-four h1 {
+    color: #ff8700;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 25px;
+}
+
+.feedback-one h2,
+.feedback-two h2,
+.feedback-three h2,
+.feedback-four h2 {
+    font-family: 'Roboto Mono', monospace !important;
+    color: #AA3D07;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.iso-left {
+    background: url(../assets/debussy.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 19rem;
+    width: 100%;
+    background-color: none;
+    border: 1px solid #ff8700;
+    margin-top: -10px;
+}
+
+.iso-right {
+    width: 100%;
+    height: 19rem;
+}
+
+.image-section-one {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.image-section-one h1 {
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    margin-bottom: 2rem;
+}
+
+.image-section-one h2 {
+    width: 100%;
+    border: 1px solid #ff8700;
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+.image-section-two {
+    margin-top: 4rem;
+}
+
+.image-section-two h1 {
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    margin-bottom: 2rem;
+}
+
+.image-section-two h2 {
+    width: 100%;
+    border: 1px solid #ff8700;
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+.ist-right {
+    background: url(../assets/fncyl.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 19rem;
+    width: 100%;
+    background-color: none;
+    border: 1px solid #ff8700;
+    margin-top: -10px;
+}
+
+.image-section-three {
+    margin-top: 4rem !important;
+}
+
+.image-section-three h1 {
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    margin-bottom: 2rem;
+}
+
+.image-section-three h2 {
+    width: 100%;
+    border: 1px solid #ff8700;
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+.istt-left {
+    background: url(../assets/krybharat.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 19rem;
+    width: 100%;
+    background-color: none;
+    border: 1px solid #ff8700;
+    margin-top: -10px;
+}
+
+.istt-right {
+    width: 100%;
+    height: 19rem;
+}
+
+.partners {
+    margin-top: 4rem;
+}
+
+.partners-heading {
+    border: 1px solid #ff8700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.partners-heading h1 {
+    color: #ff8700;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 20px;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+}
+
+.partners-inner {
+    border: 1px solid #ff8700;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . .";
+}
+
+.partner-one,
+.partner-two,
+.partner-three,
+.partner-four,
+.partner-five,
+.partner-six,
+.partner-seven,
+.partner-eight {}
+
+.partner-one img,
+.partner-two img,
+.partner-three img,
+.partner-four img,
+.partner-five img,
+.partner-six img,
+.partner-seven img,
+.partner-eight img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid #ff8700;
+    box-shadow: rgb(249 82 0 / 50%) 0px 0px 40px;
+    ;
+}
+
+.partner-one h1,
+.partner-two h1,
+.partner-three h1,
+.partner-four h1,
+.partner-five h1,
+.partner-six h1,
+.partner-seven h1,
+.partner-eight h1 {
+    font-size: 16px;
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.last-section-inner {
+    background: url(../assets/logo-gif.gif);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 13rem;
+    width: 100%;
+}
+
+.footer h1 {
+    color: #FFF;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+.footer h1 span a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff8700;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+    .second-box {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .connect-btn {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .connect-btn-2 {
+        margin-left: -5rem;
+    }
+
+    .collection {
+        margin-top: -10rem !important;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .connect-btn-2 {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .hero-content-2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+
+    .feedback {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px 25px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". ."
+            ". .";
+    }
+
+    .iso-right {
+       margin-top: 4rem;
+    }
+
+    .ist-left{
+        margin-bottom: 4rem;
+    }
+
+    .image-section-two {
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .image-section-one {
+        padding-left: 3rem;
+    }
+
+    .image-section-two {
+        padding-right: 3rem;
+    }
+
+    .image-section-three {
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .partners-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px 25px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . ."
+            ". . ."
+            ". . .";
+    }
+
+    .partner-one img,
+    .partner-two img,
+    .partner-three img,
+    .partner-four img,
+    .partner-five img,
+    .partner-six img,
+    .partner-seven img,
+    .partner-eight img {
+        border-radius: 50%;
+        height: 3.5rem;
+        width: 3.5rem;
+        border: 2px solid #ff8700;
+        box-shadow: rgb(249 82 0 / 50%) 0px 0px 40px;
+        ;
+    }
+
+    .partner-one h1,
+    .partner-two h1,
+    .partner-three h1,
+    .partner-four h1,
+    .partner-five h1,
+    .partner-six h1,
+    .partner-seven h1,
+    .partner-eight h1 {
+        font-size: 13px;
+        color: #FFF;
+        font-family: 'Roboto Mono', monospace !important;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+}
+
+@media only screen and (min-width: 463px) and (max-width: 769px) {
+    .partners-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px 25px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . ."
+            ". . ."
+            ". . .";
+    }
+
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1023px) {
+    .partners-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px 25px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . ."
+            ". . . .";
+    }
+}

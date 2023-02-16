@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+a {
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.wallet-box-header {
+    color: #FFF !important;
+    font-family: 'Roboto Mono', monospace !important;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.wallet-page-inner {
+    margin-top: 3rem;
+}
+
+.wallet-page-inner img {
+    width: 13rem;
+    height: 5rem;
+}
+
+.wallet-page-inner h1 {
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 13px;
+}
+
+.connect-btn {
+    border: none;
+    background-color: #ff8700;
+    border-radius: 5px;
+    color: black;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+    padding: .5rem 2.5rem .5rem 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.modal {
+    background-color: black;
+}
+
+.modal-content {
+    background-color: black !important;
+    border: 1px solid #FFF;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.modal-title {
+    color: #FFF;
+    font-size: 14px !important;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body h1 {
+    color: #FFF;
+    font-size: 12px;
+    margin-top: .5rem;
+    margin-bottom: 1.2rem;
+}
+
+.close-btn {
+    border: none;
+    color: #FFF;
+    background-color: inherit;
+}
+
+.metamask,
+.wallet-connect,
+.coinbase {
+    background-color: #FFF;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.metamask h1,
+.wallet-connect h1,
+.coinbase h1 {
+    color: black;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+    margin-left: .5rem;
+    margin-top: 1.2rem;
+}
+
+.metamask img,
+.coinbase img {
+    height: 2rem;
+    width: 2.4rem;
+}
+
+.wallet-connect img {
+    height: 1.5rem;
+    width: 2.5rem;
+}
+
+.modal-footer h1 {
+    color: #929292;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.modal-footer h1 span {
+    color: #FFF;
+}
