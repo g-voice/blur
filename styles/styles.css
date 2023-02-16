@@ -164,13 +164,33 @@ body {
     justify-content: space-between;
 }
 
+.offcanvas-header {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    color: #FFF;
+    background-color: inherit;
+    top: 1rem;
+    right: 1rem;
+}
+
+.close-btn i {
+    font-size: 25px;
+}
+
+.offcanvas-body {
+    padding-top: 3rem;
+}
+
 .offcanvas-body img {
     width: 13rem;
     height: 5rem;
 }
 
 .offcanvas-body h1 a {
-    margin-top: 3rem;
+    margin-top: 5rem !important;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace !important;
     font-weight: 600;
