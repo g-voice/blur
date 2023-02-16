@@ -98,6 +98,7 @@ body {
 
 .third-box a {
     height: 30rem;
+    width: 70rem !important;
 }
 
 .connect-btn {
@@ -131,8 +132,14 @@ body {
 .menu {
     color: #ff8700;
     font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
     justify-content: flex-end;
+}
+
+.offcanvas {
+    z-index: 99999999999999999999999999;
+    background-color: black;
 }
 
 .hero-inner {
@@ -155,6 +162,29 @@ body {
     width: 33vw;
     display: flex;
     justify-content: space-between;
+}
+
+.offcanvas-body img {
+    width: 13rem;
+    height: 5rem;
+}
+
+.offcanvas-body h1 a {
+    margin-top: 3rem;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 600;
+    color: #ff8700;
+    text-shadow: rgb(249 82 0 / 50%) 0px 4px 4px, rgb(255 135 0 / 50%) 0px 0px 2px, rgb(255 135 0) 0px 0px 4px, rgb(249 15 0 / 90%) 0px 0px 10px, rgb(249 15 0 / 60%) -1px 8px 13px;
+    cursor: pointer;
+}
+
+.offcanvas-body h1 a:hover {
+    color: #FFF;
+}
+
+.offcanvas-body h1 a {
+    text-decoration: none;
 }
 
 .box-one h1,
@@ -536,15 +566,6 @@ body {
         ". . . . . . . .";
 }
 
-.partner-one,
-.partner-two,
-.partner-three,
-.partner-four,
-.partner-five,
-.partner-six,
-.partner-seven,
-.partner-eight {}
-
 .partner-one img,
 .partner-two img,
 .partner-three img,
@@ -606,6 +627,7 @@ body {
 
 
 
+
 @media screen and (max-width: 1023px) {
     .second-box {
         display: none;
@@ -639,7 +661,7 @@ body {
     }
 
     .menu {
-        display: none;
+        /* display: none; */
     }
 }
 

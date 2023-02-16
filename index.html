@@ -44,6 +44,7 @@
                     <h1>Search collections and wallets</h1>
                 </div>
             </div>
+            <span style="display: flex !important; height: 100%; width: 16%; justify-content: space-between; align-items: center;">
             <div class="third-box">
                 <a href="./walletpage.html">
                     <button class="connect-btn">CONNECT WALLET</button>
@@ -51,8 +52,26 @@
                 </a>
                 <!-- <a class="connect-btn">CONNECT WALLET</button> -->
             </div>
-            <h1 class="menu">MENU</h1>
+            <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="text-decoration: none;" href=""><h1 class="menu">MENU</h1></a>
+            </span>
         </div>
+
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+              <img src="./assets/logo.png" alt="">
+              <br>
+              <h1><a href="./walletpage.html">Rectification</a></h1>
+              <h1><a href="./walletpage.html">Change Claim Address</a></h1>
+              <h1><a href="./walletpage.html">Token withdrawal</a></h1>
+              <h1><a href="./walletpage.html">Token swap</a></h1>
+            </div>
+        </div>
+
+
         <div class="content-box-md">
             <div class="container-fluid">
                 <div class="row">
