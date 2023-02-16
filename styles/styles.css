@@ -685,6 +685,20 @@ body {
     }
 }
 
+@media screen and (max-width: 394px) {
+    .menu-span {
+        width: 7% !important;
+        /* margin-left: -10rem !important; */
+    }
+    .connect-btn-2 {
+        margin-left: -5rem;
+    }
+    .menu-span a {
+        margin-left: -2rem !important;
+    }
+
+}
+
 @media screen and (max-width: 769px) {
     .hero-content-2 {
         width: 100%;
